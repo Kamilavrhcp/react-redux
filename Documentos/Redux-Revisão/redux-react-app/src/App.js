@@ -41,7 +41,7 @@ class App extends Component {
         <label htmlFor="text-input">
           <input onChange={this.handleChange} name="text" id="text-input" type="text" />
         </label>
-        <button onClick={() => this.clickChange} type="button">Salvar</button>
+        <button onClick={() => this.clickChange()} type="button">Salvar</button>
         {shouldAppear && <p>{inputState}</p>}
       </section>
     );
